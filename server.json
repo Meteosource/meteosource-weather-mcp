@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.meteosource/weather",
+  "title": "Weather MCP Server by Meteosource",
+  "description": "Forecasts, severe-weather alerts, air quality, 20-year weather history, solar and wind production.",
+  "version": "0.1.0",
+  "websiteUrl": "https://github.com/Meteosource/meteosource-weather-mcp#readme",
+  "repository": {
+    "url": "https://github.com/Meteosource/meteosource-weather-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.meteosource.com/mcp",
+      "headers": [
+        {
+          "name": "X-API-Key",
+          "description": "Your Meteosource API key (https://www.meteosource.com). The plan the key is on decides which tools are available.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
