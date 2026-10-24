@@ -3,7 +3,7 @@
   "name": "com.meteosource/weather",
   "title": "Weather MCP Server by Meteosource",
   "description": "Forecasts, severe-weather alerts, air quality, 20-year weather history, solar and wind production.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://github.com/Meteosource/meteosource-weather-mcp#readme",
   "repository": {
     "url": "https://github.com/Meteosource/meteosource-weather-mcp",
@@ -15,10 +15,18 @@
       "url": "https://mcp.meteosource.com/mcp",
       "headers": [
         {
-          "name": "X-API-Key",
-          "description": "Your Meteosource API key (https://www.meteosource.com). The plan the key is on decides which tools are available.",
+          "name": "Authorization",
+          "description": "Bearer token carrying your Meteosource API key. The plan the key is on decides which tools are available.",
           "isRequired": true,
-          "isSecret": true
+          "isSecret": true,
+          "value": "Bearer {api_key}",
+          "variables": {
+            "api_key": {
+              "description": "Your Meteosource API key (https://www.meteosource.com).",
+              "isRequired": true,
+              "isSecret": true
+            }
+          }
         }
       ]
     }
