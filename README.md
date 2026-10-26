@@ -231,8 +231,10 @@ issue in this repository.
 ## About this repository
 
 This repository holds the documentation of the hosted server and its entry for the
-[MCP Registry](https://registry.modelcontextprotocol.io), `server.json`. The server itself runs
-at Meteosource; there is nothing here to install.
+[MCP Registry](https://registry.modelcontextprotocol.io), `server.json`. The server is listed
+there as [`com.meteosource/weather`](https://registry.modelcontextprotocol.io/v0.1/servers/com.meteosource%2Fweather/versions); clients and catalogs that read the registry
+pick it up from that entry. The server itself runs at Meteosource; there is nothing here to
+install.
 
 ## License
 
