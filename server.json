@@ -3,8 +3,8 @@
   "name": "com.meteosource/weather",
   "title": "Weather MCP Server by Meteosource",
   "description": "Forecasts, severe-weather alerts, air quality, 20-year weather history, solar and wind production.",
-  "version": "0.1.1",
-  "websiteUrl": "https://github.com/Meteosource/meteosource-weather-mcp#readme",
+  "version": "0.1.2",
+  "websiteUrl": "https://mcp.meteosource.com",
   "repository": {
     "url": "https://github.com/Meteosource/meteosource-weather-mcp",
     "source": "github"
